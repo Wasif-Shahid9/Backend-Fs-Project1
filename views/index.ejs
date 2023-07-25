@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+    
+      <form method="post" action="/contact">
+        <h1>Create User</h1>
+        <input type="number" name="id" placeholder="Enter User ID" /> <br />
+
+        <input type="text" name="name" placeholder="Enter Name" /> <br />
+        <input type="email" name="email" placeholder="Enter Email" /> <br />
+        <button type="submit">Submit</button>
+      </form>
+      <h1>Update User</h1>
+      <form method="post" action="/users/update">
+        <input type="number" name="id" placeholder="Enter User ID" /> <br />
+        <input type="text" name="name" placeholder="Enter New Name" /> <br />
+        <input type="email" name="email" placeholder="Enter New Email" /> <br />
+        <button formmethod="post" type="submit">Update User</button>
+      </form>
+    </main>
+  </body>
+</html>
